@@ -1,0 +1,24 @@
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: triangle-animation 2s infinite alternate;
+}
+
+@keyframes triangle-animation {
+    0% {
+        border-bottom: 100px solid blue;
+    }
+    50% {
+        border-bottom: 200px solid red;
+    }
+    100% {
+        border-bottom: 100px solid blue;
+    }
+}
